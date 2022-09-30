@@ -1,14 +1,12 @@
 // user routes
-// importation de package origine nodeJS
-const express = require('express');
-const router = express.Router();
-
-// importation fichier personnaliser
-const userctrl = require('../controllers/user');
+// importation
+const express   = require('express');
+const userCtrl  = require('../controllers/user');
+const router    = express.Router();
 
 // création des routes
-router.post('/signup', userctrl.signup);
-router.post('/login', userctrl.login);
+router.post('/signup', userCtrl.signup);
+router.post('/login', userCtrl.login);
 
 // exportation router
 module.exports = router;

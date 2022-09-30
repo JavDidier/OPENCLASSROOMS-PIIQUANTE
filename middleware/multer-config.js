@@ -3,9 +3,9 @@ const multer = require('multer');
 
 // précise les formats utilisés
 const MIME_TYPES = {
-    'image/jpg': 'jpg',
-    'image/jpeg': 'jpeg',
-    'image/png': 'png'
+    'images/jpg': 'jpg',
+    'images/jpeg': 'jpeg',
+    'images/png': 'png'
 };
 
 // précise la destination de l'enregistrement
