@@ -1,3 +1,4 @@
+// CONFIGS
 require("dotenv").config({ path: "./configs/.env" }); //dotenv
 require('./configs/db');        // base de données
 require('./configs/image');     // gérer le dossier image
@@ -29,8 +30,6 @@ app.use('/images', express.static(path.join(__dirname, 'images')));
 app.listen(process.env.PORT, () => {
     console.log(' - Le serveur a démarré sur le port', process.env.PORT)
 });
-
-
 
 // exportation d'app
 module.exports = app;

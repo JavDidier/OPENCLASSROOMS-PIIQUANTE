@@ -7,7 +7,7 @@ const pathImages    = './images';   // chemin où le dossier image sera créé
 fs.access(pathImages, (error) => {
    
     if (error) {
-      // Si erreur alors l'utilisateur n'a pas accès au dossier images, celà signifie qu'il existe pas.
+      // Si erreur alors l'utilisateur n'a pas accès au dossier images, celà signifie que le dossier n'existe pas.
       // Alors nous créons le dossier images
       fs.mkdir(pathImages, (error) => {
         if (error) console.log(error);
