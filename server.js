@@ -26,8 +26,8 @@ app.use('/api/sauces', saucesRoutes);
 app.use('/api/auth', userRoutes);
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
-// écoute du serveur express
-app.listen(process.env.PORT, () => {
+// écoute du serveur express sur le port 3000
+app.listen(process.env.PORT || 3000, () => {
     console.log(' - Le serveur a démarré sur le port', process.env.PORT)
 });
 
