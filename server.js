@@ -9,6 +9,10 @@ const path          = require('path');
 const saucesRoutes  = require('./routes/sauce');
 const userRoutes    = require('./routes/user');
 
+// MORE SECURITY ( HELMET )
+const helmet = require('helmet');
+app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+
 // gestion des erreurs CORS
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
