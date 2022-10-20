@@ -1,12 +1,14 @@
 // importation de multer pour gérer les images
 const multer = require('multer');
 
-// précise les formats utilisés
+
+// ============================================= MODIFIER AVANT LE PASSAGE DE LA SOUTENANCE
 const MIME_TYPES = {
-    'images/jpg': 'jpg',
-    'images/jpeg': 'jpeg',
-    'images/png': 'png'
+    'image/jpg': 'jpg',
+    'image/jpeg': 'jpg',
+    'image/png': 'png'
 };
+// ============================================= MODIFIER AVANT LE PASSAGE DE LA SOUTENANCE
 
 // précise la destination de l'enregistrement
 const storage = multer.diskStorage({
